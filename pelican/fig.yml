@@ -1,0 +1,13 @@
+pelican:
+  build: /home/james/docker/pelican
+  volumes:
+    - ./content:/pelican/content
+
+web:
+  build: /home/james/docker/nginx
+  volumes_from:
+    - pelican
+  ports:
+    - "80:80"
+  links:
+    - pelican
