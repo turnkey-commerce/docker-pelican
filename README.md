@@ -1,7 +1,12 @@
 # docker-pelican
 Docker and Fig containers for Pelican static site generation, served by Nginx.
 
-This project creates two Docker containers, one for the Pelican blog static file blog generator and another for the serving of the content using an Nginx contrainer.  Fig is used to orchestrate the building of the image and running of the containers.
+This project creates two Docker containers, one for the Pelican blog static file blog generator and another for the serving of the content using an Nginx contrainer.  Fig is used to orchestrate the building of the images and running of the containers.
+
+To Install:
+
+1. Install [Docker](https://docs.docker.com/) on a Linux box or VM.
+2. Install [Fig](http://www.fig.sh/install.html).
 
 To start:
 
